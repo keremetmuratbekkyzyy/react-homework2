@@ -1,0 +1,87 @@
+* { box-sizing: border-box; }
+
+body {
+  min-width: 320px;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2d2544;
+  background: #f8f6fe;
+}
+
+.container {
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 62px 20px 44px;
+  text-align: center;
+}
+
+.eyebrow {
+  margin: 0 0 14px;
+  color: #7e62ba;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(28px, 4vw, 39px);
+}
+
+.intro {
+  margin: 14px 0 38px;
+  color: #7b748c;
+  font-size: 15px;
+}
+
+.user-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.user-card {
+  border: 1px solid #eeebf8;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(83, 55, 133, 0.04);
+}
+
+.user-card .ant-card-body { padding: 28px 18px; }
+
+.user-avatar {
+  background: #ede7fb;
+  color: #7658b3;
+  font-size: 42px !important;
+}
+
+.user-card h2 {
+  margin: 18px 0 3px;
+  color: #32274d;
+  font-size: 21px;
+}
+
+.cartoon-name {
+  margin: 0 0 17px !important;
+  font-size: 13px !important;
+  color: #958aa9 !important;
+}
+
+.user-card p { margin: 8px 0; color: #686176; font-size: 15px; }
+.user-card .ant-tag { margin: 14px 0 0; padding: 3px 12px; border-radius: 16px; }
+
+.footnote {
+  max-width: 630px;
+  margin: 30px auto 0;
+  color: #91899d;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+@media (max-width: 750px) {
+  .user-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 500px) {
+  .container { padding-top: 34px; }
+  .user-list { grid-template-columns: 1fr; }
+}
